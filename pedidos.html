@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Atelier Fuerza | Pedidos</title>
+	<link rel="stylesheet" type="text/css" href="estiloPedidos.css">
+	<link rel="icon" href="IconoAtelier.ico">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;1,300&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/620349e6fc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<header class="header">
+		<nav class="nav">
+			<div>
+				<a href="index.html"><img src="LogoAtelier.png" alt="Atelier" class="logo"></a>
+			</div>
+			<input type="checkbox" id="check">	
+			<label for="check" class="bar-button">
+				<i class="fa-solid fa-bars"></i>
+			</label>
+			<ul class="nav-items">
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="producción.html">Producción</a></li>
+				<li><a href="pedidos.html">Pedidos</a></li>
+				<li><a href="sobreNosotros.html">Sobre Nosotros</a></li>
+			</ul>
+		</nav>
+		<div class="banner-text">
+			<h2 class="primer-h2">Proveeduria gatronómica</h2>
+		</div>
+	</header>
+	<main>
+		<section class="container-pedidos">
+			<h3 class="h3-pedidos">Envianos por correo tu pedido</h3>
+			<form class="formulario">
+				<input type="text" placeholder="Nombre completo" class="atelier nombre">
+				<input type="text" placeholder="Nombre del Local" class="atelier nombre">
+				<input type="email" placeholder="Email" class="atelier mail">
+				<input type="textarea" placeholder="¿Qué productos deseabas sumar?" class="atelier pedido">
+				<input type="submit" value="Enviar mi pedido" class="atelier enviar">
+				<div class="resultado"></div>
+			</form>
+		</section>
+	</main>
+	<footer class="footer">
+		<h4 class="h4-footer">Datos de contacto</h4>
+		<div class="footer-div">
+			<div class="footer-item">
+				<a href="https://www.instagram.com/atelierfuerza/"><i class="fa-brands fa-instagram"></i></a>
+			</div>
+			<div class="footer-item">
+				<a href="sobreNosotros.html">+ sobre nosotros</a>
+			</div>
+
+			<div class="copyright-div">
+				<p class="copyright"><i class="fa-regular fa-copyright"></i> 2023 | <b>Todos los derechos reservados.</b></p>
+			</div>
+		</div>
+	</footer>
+	<script src="codigoPedidos.js"></script>
+</body>
+</html>

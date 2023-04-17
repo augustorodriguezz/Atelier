@@ -1,0 +1,356 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.header {
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    background-image: url(pedidosc.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.nav {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 170px;
+    margin-left: 20px;
+    margin-top: 40px;
+}
+.bar-button {
+    font-size: 25px;
+    color: #fff;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.nav-items {
+    position: fixed;
+    width: 100%;
+    height: 0;
+    top: 150px;
+    background: rgba(0, 0, 0, .8);
+    text-align: center;
+    transition: all .5s;
+}
+
+.nav-items li {
+    display: none;
+    line-height: 30px;
+    margin: 50px 0;
+    transition: all .5s;
+}
+
+.nav-items li:hover {
+    transform: scale(1.1);
+}
+
+.nav-items li a {
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.nav-items li a:active, .nav-items li a:hover {
+    color: #d5d0c9;
+    transition: .3s;
+}
+
+#check {
+    display: none;
+}
+
+#check:checked ~ .nav-items {
+    height: 100vh;
+}
+#check:checked ~ .nav-items li{
+    display: block;
+}
+
+.banner-text {
+    padding: 0 30px;
+    margin-top: 80px;
+    color: #fff;
+    text-align: center;
+}
+
+.primer-h2{
+    font-size: 30px;
+}
+.container-pedidos {
+    width: 100%;
+    height: 570px;
+    background-color: #d5d0c9;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.h3-pedidos {
+    font-size: 20px;
+    color: #000;
+    height: 40px;
+    width: 100%;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.formulario {
+    width: 80%;
+    height: 450px;
+    margin: 0 auto;
+    background: #000;
+    padding: 20px;
+}
+.atelier {
+    display: block;
+    width: 90%;
+    padding: 9px;
+    font-size: 16px;
+    outline: none;
+    margin: 12px auto;
+    border: none;
+    border-bottom: 2px solid #999;
+    background: transparent;
+    transition: background 0.3s;
+    color: #fff;
+}
+
+.atelier::placeholder {
+    color: #d0d5d9;
+    opacity: .5;
+}
+
+.pedido {
+        height: 100px;
+}
+.enviar {
+    width: 50%;
+    margin-top: 50px;
+    border-bottom: none;
+    padding: 12px;
+    background: #999;
+    color: #000;
+    border-radius: ;
+}
+.negativo {
+    color: #999;
+    text-align: center;
+}
+
+.positivo {
+    color: #999;
+    text-align: center;
+}
+.footer {
+    width: 100%;
+    height: 155px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #000;
+    bottom: 0;
+}
+.h4-footer {
+        font-size: 18px;
+        color: #fff;
+        height: 35px;
+        margin-top: 10px;
+        width: 100%;
+        text-align: center;
+        letter-spacing: 1px;
+}
+.footer-div {
+        height: 110px;
+        background-color: #000;
+        width: 100%;
+}
+.footer-item {
+        color: #fff;
+        display: flex;
+        margin-left: 5%;
+        margin-top: 10px;
+        font-size: 16px;
+}
+.footer-item a {
+        color: #fff;
+}
+.copyright-div {
+        bottom: 0;
+        left: auto;
+        margin-top: 15px;
+}
+.copyright {
+        text-align: center;
+        color: #fff;
+        font-size: 15px;
+}
+
+@media screen and (min-width: 900px) {
+    .logo {
+        margin-left: 50px;
+    }
+    nav {
+        height: 100px;
+
+    }
+    .bar-button {
+        display: none;
+    }
+    .nav-items {
+        position: relative;
+        height: 100px;
+        top: 0;
+        background: none;
+        transition: none;
+        text-align: right;
+        margin-right: 50px;
+    }
+    .nav-items li{
+        display: inline-block;
+        line-height: 100px;
+        margin: 0 20px;
+        transition: all .5s;
+
+    }
+    .nav-items li a {
+        font-size: 16px;
+
+    }
+    .primer-h2 {
+        font-size: 60px;
+    }
+    .container-pedidos {
+    width: 100%;
+    height: 700px;
+    background-color: #d5d0c9;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+    .h3-pedidos {
+    font-size: 35px;
+    color: #000;
+    height: 70px;
+    width: 100%;
+    margin-top: 40px;
+    letter-spacing: 1px;
+    text-align: center;
+    }
+    .formulario {
+    width: 60%;
+    height: 500px;
+    margin: 0 auto;
+    background: #000;
+    padding: 30px;
+    }
+    .atelier {
+    display: block;
+    width: 90%;
+    padding: 9px;
+    font-size: 20px;
+    outline: none;
+    margin: 12px auto;
+    border: none;
+    border-bottom: 2px solid #999;
+    background: transparent;
+    transition: background 0.3s;
+    color: #fff;
+    }
+
+    .atelier::placeholder {
+    color: #d0d5d9;
+    opacity: .5;
+    }
+    .atelier:hover::placeholder{
+    transition: color 0.3s;
+    color: #fff;
+    }
+
+    .atelier:hover{
+    background: #999;
+    }
+    .pedido {
+        height: 100px;
+    }
+    .enviar {
+    width: 40%;
+    margin-top: 50px;
+    border-bottom: none;
+    padding: 12px;
+    background: #999;
+    color: #000;
+    border-radius: ;
+    }
+    .enviar:hover{
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    }
+
+    .negativo {
+    color: #999;
+    }
+
+    .positivo {
+    color: #999;
+    }
+
+    .footer {
+        width: 100%;
+        height: 200px;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #000;
+        bottom: 0;
+    }
+    .h4-footer {
+        color: #fff;
+        font-size: 30px;
+        height: 40px;
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 90px;
+        letter-spacing: 1px;
+        text-align: left;
+    }
+    .footer-div {
+        height: 160px;
+        background-color: #000;
+        width: 100%;
+    }
+    .footer-item {
+        color: #fff;
+        display: flex;
+        margin-left: 120px;
+        margin-top: 25px;
+        font-size: 20px;
+    }
+    .footer-item a {
+        color: #fff;
+    }
+    .copyright-div {
+        bottom: 0;
+        left: auto;
+        margin-top: 15px;
+    }
+    .copyright {
+        text-align: center;
+        color: #fff;
+        font-size: 15px;
+
+    }
+}
+
